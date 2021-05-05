@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Calendar</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <style></style>
+  </head>
+
+  <body>
+    <h1>Calendar</h1>
+    <h1 id = "month"></h1>
+    <div id="calendar">
+      <!-- day cells will be inserted here -->
+    </div>
+
+    <h1>Add Meeting</h1>
+
+    <!-- add event form sections -->
+
+    <div id="addMeeting">
+      <div>
+        <h4>Meeting Day</h4>
+        <h4 id="meeting-day">Click on a Day</h4>
+      </div>
+
+      <div>
+        <h4>Meeting Time</h4>
+        <input type="time" id="meeting-time" />
+      </div>
+
+      <div>
+        <h4>Meeting Name</h4>
+
+        <input
+          type="text"
+          id="meeting-name"
+          placeholder="Insert a name for the meeting"
+        />
+      </div>
+
+      <div>
+        <h4>Add</h4>
+
+        <button onclick="saveMeeting()">Save Meeting</button>
+      </div>
+    </div>
+
+    <div id="appointments">
+      <h1>Appointments for the day!</h1>
+      <ul id="appointment-list"></ul>
+      <!--List of appointments will be inserted here-->
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
